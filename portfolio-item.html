@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Miro</title>
+  <link rel="stylesheet" href="/htdocs/css/bootstrap.css">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/htdocs/css/player-style.css" />
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/htdocs/css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="/htdocs/css/style.css" />
+  <link rel="stylesheet" href="/htdocs/css/perload.css">
+
+
+
+<script type="text/javascript">
+  function doOnOrientationChange()
+      {
+        switch(window.orientation) 
+        {  
+          case -90:                 
+                 document.getElementById("landscape").style.display="block";
+                 break;
+          case 90:              
+                document.getElementById("landscape").style.display="block";                 
+                break;
+         default:                   
+                document.getElementById("landscape").style.display="none";
+                break;                            
+        }
+      }
+
+      //Listen to orientation change
+      window.addEventListener('orientationchange', doOnOrientationChange);  
+</script>
+</head>
+<body onload="doOnOrientationChange();">
+<div id="landscape"><div>"Rotate Device to Portrait"</div></div>
+<div class="exit-btn">
+    <span><a href="/htdocs/index.html"><img src="/htdocs/images/closed-btn.png"/></a></span>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         
+          <div id="video-modal" class='video-modal'>
+              <video id="video-js" class="video-js" preload="auto" width="640" height="264" data-setup='{"controls":true}'>
+                  <source src="/htdocs/video/Sequence_high.mp4" type='video/mp4'>
+                  <source src="/htdocs/video/Sequence_high.webm" type='video/webm'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+              </video>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="perload-background">
+    <div class="preloader">
+      <div class="lines">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <div class="loading-text">LOADING</div>
+    </div>
+  </div>
+
+ 
+
+  <div id="fullpage">
+    <div class="section" id="section0"></div>
+    <div class="section" id="section1"></div>
+    <div class="section" id="section2"></div>
+    <div class="section" id="section3"></div>
+    <div class="section" id="section4"></div>
+    <div class="section" id="section5"></div>
+    <div class="section" id="section6"></div>
+    <div class="section" id="section7"></div>
+    <div class="section" id="section8"></div>
+    <div class="section" id="section9"></div>
+  <div class="portfolio-item-style portfolio-item-content" id="portfolio-item-content">
+    <div class="sasd">
+      <div class="img-icn">
+        <img src="/htdocs/images/icon-img.png" class="img-icon">
+      </div>
+      <div class="title-icn">
+          <h2>Infusion LED Module animation</h2>
+          <div class="btn-1 btn-view" type="button" data-toggle="modal" data-target="#myModal">VIEW</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12 m-m">
+      <div class="row" style="display: flex;">
+
+      <div id="row-text" class="one" style="margin-top: 67px; margin-left: -6px;">
+        <h4>CHALLENGE</h4>
+      </div>
+      <div class="ss">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet tincidunt tortor. Donec quis est a velit scelerisque vestibulum at elementium ipsum.</p>
+      </div>
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12 m-m">
+      <div class="row" style="display: flex;">
+
+      <div id="row-text" class="two" style="margin-top: 55px;">
+        <h4 style="margin-top: 4px;">SOLUTION</h4>
+      </div>
+      <div class="ss">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet tincidunt tortor. Donec quis est a velit scelerisque vestibulum at elementium ipsum.</p>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- <div id="fixed">aksmd;lkmsaopdf</div> -->
+<style type="text/css">
+
+ #instructions { max-width: 640px; text-align: left; margin: 30px auto; }
+  #instructions textarea { width: 100%; height: 100px; }
+  
+  /* Show the controls (hidden at the start by default) */
+  .video-js .vjs-control-bar { 
+    display: -webkit-box !important; 
+    display: -webkit-flex !important;
+    display: -ms-flexbox !!important;
+    display: flex !important;
+  }
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
+<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="/htdocs/js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="/htdocs/js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript" src="/htdocs/js/player-js.js"></script>
+<script type="text/javascript" src="/htdocs/js/videojs-ie8.min.js"></script>
+<script type="text/javascript" src="/htdocs/js/custom.js"></script>
+<script type="text/javascript">
+
+  $('#fullpage').fullpage({
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage','6thpage','7thpage','8thpage','9thpage', 'lastPage'],
+    menu: '#menu',
+    navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage','6thpage','7thpage','8thpage','9thpage', 'lastPage'],
+    css3:false,
+    normalScrollElementTouchThreshold: 10,
+    navigation: true
+  });
+
+</script>
+  <script src="/htdocs/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+     
+  </script>
+
+
+
+  <style type="text/css">
+  /*  .vjs-controls-disabled .vjs-control-bar, .vjs-error .vjs-control-bar, .vjs-using-native-controls .vjs-control-bar, 
+    .video-js .vjs-control-bar, .vjs-control-bar, #big-video-control-container{
+      display: flex !important;
+    }*/
+
+  </style>
+</body>
+</html>

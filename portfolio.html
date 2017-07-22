@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Miro</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/perload.css">
+
+<script type="text/javascript">
+  function doOnOrientationChange()
+      {
+        switch(window.orientation) 
+        {  
+          case -90:                 
+                 document.getElementById("landscape").style.display="block";
+                 break;
+          case 90:              
+                document.getElementById("landscape").style.display="block";                 
+                break;
+         default:                   
+                document.getElementById("landscape").style.display="none";
+                break;                            
+        }
+      }
+
+      //Listen to orientation change
+      window.addEventListener('orientationchange', doOnOrientationChange);  
+</script>
+</head>
+<body onload="doOnOrientationChange();">
+<div id="landscape"><div>"Rotate Device to Portrait"</div></div>
+<div class="perload-background">
+  <div class="preloader">
+    <div class="lines">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    
+    <div class="loading-text">LOADING</div>
+  </div>
+</div>
+<div class="portfolio-bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge logo-img">
+    <a href="index.html">
+      <img src="images/logo.png"/>
+    </a>
+  </div>
+
+  <div class="nav-bar">
+    <ul class="nav-style nav-animation">
+      <li><a href="portfolio.html">WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+<a href="#" class="btn btn-info btn-sm nav-bar-mobile-btn">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>
+</a>
+
+</div>
+
+  <div class="nav-bar-mobile">
+    <div class="closed-btn">
+    <div class="exit-btn">
+      <span><img src="images/closed-btn.png"/></span>
+    </div>
+    </div>
+    <ul class="nav-style-mobile nav-animation">
+      <li><a href="portfolio.html">WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <div class="portfolio-content">
+
+    <div class="main"> 
+      <!-- TENTH EXAMPLE -->
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#firstPage">
+          <img src="images/forestbridge_small.jpg" />
+          <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>WEB / MOTION  <strong></strong></h5>
+            </div>
+          </div>
+          </div>
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#secondPage">
+          <img src="images/forestbridge_small.jpg" />
+          <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>BRANDING / GUIDELINES <strong></strong></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#3rdPage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>WEB / MOTION <strong></strong></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#4thpage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>VIDEO / 3D / MOTION  <strong></strong></h5>
+            </div>
+          </div>
+          </a>
+      </div>
+
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#5thpage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>VIDEO / 3D / MOTION <strong></strong></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#6thpage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>VIDEO / 3D / MOTION <strong></strong></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#7thpage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>WEB / MOTION <strong></strong></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#8thpage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>WEB / MOTION <strong></strong></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="view view-tenth">
+        <a href="..portfolio-item.html#9thpage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>BRANDING / GUIDELINES <strong></strong></h5>
+            </div>
+          </div>
+          </a>
+      </div>
+      <div class="view view-tenth">
+      <a href="..portfolio-item.html#lastPage">
+          <img src="images/forestbridge_small.jpg" />
+           <div class="mask">
+            <div class="info-wrapper">
+            <h4>Real Lab</h4>
+            <hr>
+            <h5>BRANDING / GUIDELINES <strong></strong></h5>
+            </div>
+          </div>
+          </a>
+      </div>
+  </div>
+  </div>
+  </a>
+  </div>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    // $(document).ready(function(){
+    //   $(".view").each(function(i) {
+    //     $(this).delay(i*150).toggle("scale", 500);
+    //   });
+    // });
+
+  </script>
+
+
+  </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

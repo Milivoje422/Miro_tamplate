@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Miro</title>
+<link rel="stylesheet" href="/htdocs/css/bootstrap.css"> 
+<link rel="stylesheet" href="/htdocs/css/style.css">
+<link rel="stylesheet" href="/htdocs/css/perload.css">
+
+<script type="text/javascript">
+  function doOnOrientationChange()
+      {
+        switch(window.orientation) 
+        {  
+          case -90:                 
+                 document.getElementById("landscape").style.display="block";
+                 break;
+          case 90:              
+                document.getElementById("landscape").style.display="block";                 
+                break;
+         default:                   
+                document.getElementById("landscape").style.display="none";
+                break;                            
+        }
+      }
+
+      //Listen to orientation change
+      window.addEventListener('orientationchange', doOnOrientationChange);  
+</script>
+</head>
+<body onload="doOnOrientationChange();">
+<div id="landscape"><div>"Rotate Device to Portrait"</div></div>
+
+<div class="perload-background">
+  <div class="preloader">
+    <div class="lines">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    
+    <div class="loading-text">LOADING</div>
+  </div>
+</div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge logo-img">
+    <a href="/htdocs/index.html">
+      <img src="/htdocs/images/logo.png"/>
+    </a>
+  </div>
+
+  <div class="nav-bar">
+    <ul class="nav-style nav-animation">
+      <li><a href="/htdocs/portfolio.html">WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="/htdocs/contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <a href="#" class="btn btn-info btn-sm nav-bar-mobile-btn">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
+  </a>
+  <div class="nav-bar-mobile">
+    <div class="closed-btn">
+    <div class="exit-btn">
+      <span><img src="/htdocs/images/closed-btn.png"/></span>
+    </div>
+    </div>
+    <ul class="nav-style-mobile nav-animation">
+      <li><a href="/htdocs/portfolio.html">WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="/htdocs/contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div class="w3-display-middle title-contact">
+    <h1><b>Hello.</b>  We're here to help.</h1>
+  </div>
+  <div class="w3-display-middle cntent-contact">
+      <div class="info-box">
+        <h4><b>Become a client.</b></h4>
+        <p>Business development</p>
+        <p>makesomethingbig@miro.nyc</p>
+      </div>
+      <div class="info-box borders">
+        <h4><b>Careers.</b></h4>
+        <p>Recruiting</p>
+        <p>iamtheone@miro.nyc</p>
+      </div>
+      <div class="info-box">
+        <h4><b>Everything else.</b></h4>
+        <p>Front desk</p>
+        <p>info@miro.nyc</p>
+      </div>
+  </div>
+
+  <div class="w3-display-middle client-info-box">
+      <div class="info-box client-info">
+        <h4><b>Miro Creative.</b></h4>
+        <p>42 Brodway</p>
+        <p>New York, NY 10004, USA</p>
+        <p>+1 347 567 2272</p>
+      </div>
+  </div>
+
+</div>
+    <script src="/htdocs/js/jquery.min.js"></script>
+    <script src="/htdocs/js/bootstrap.min.js"></script>
+    <script src="/htdocs/js/custom.js"></script>
+</body>
+</html>

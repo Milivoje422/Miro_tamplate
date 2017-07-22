@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Miro</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="stylesheet" href="/htdocs/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/htdocs/css/player-style.css" />
+<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+<link rel="stylesheet" href="/htdocs/css/style.css">
+<link rel="stylesheet" href="/htdocs/css/perload.css">
+
+
+<script type="text/javascript">
+  function doOnOrientationChange()
+      {
+        switch(window.orientation) {  
+          case -90:                 
+                 document.getElementById("landscape").style.display="block";
+                 break;
+          case 90:              
+                document.getElementById("landscape").style.display="block";                 
+                break;
+         default:                   
+                document.getElementById("landscape").style.display="none";
+                break;                            
+        }
+      }
+      //Listen to orientation change
+      window.addEventListener('orientationchange', doOnOrientationChange);  
+</script>
+</head>
+<body onload="doOnOrientationChange();">  
+<div id="landscape"><div>"Rotate Device to Portrait"</div></div>
+
+<div class="perload-background">
+  <div class="preloader">
+    <div class="lines">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    
+    <div class="loading-text">LOADING</div>
+  </div>
+</div>
+
+<video id="bgvid" playsinline autoplay muted loop>
+  <source src="/htdocs/video/Sequence_high.mp4" type="video/webm">
+  <source src="/htdocs/video/Sequence_high.mp4" type="video/mp4">
+</video>
+<div class="box-position w3-display-container w3-animate-opacity w3-text-white">
+
+  <div class="w3-display-topleft w3-padding-large w3-xlarge logo-img link-home m-top" style="cursor: pointer">
+      <img src="/htdocs/images/logo.png"/>
+  </div>
+
+  <div class="nav-bar">
+    <ul class="nav-style nav-animation">
+      <li id="portfolio-link" style="cursor: pointer"><a>WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li id="link-contact" style="cursor: pointer"><a>CONTACT</a></li>
+    </ul>
+  </div>
+
+<a href="#" class="btn btn-info btn-sm nav-bar-mobile-btn">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>
+</a>
+
+  <div class="nav-bar-mobile">
+    <div class="closed-btn">
+    <div class="exit-btn">
+      <span><img src="/htdocs/images/closed-btn.png"/></span>
+    </div>
+    </div>
+    <ul class="nav-style-mobile nav-animation">
+      <li class="link-portfolio" style="cursor: pointer"><a>WORK</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li class="link-contact" style="cursor: pointer"><a>CONTACT</a></li>
+    </ul>
+  </div>
+<div class="main-content">
+
+  <div class="w3-display-middle">
+    <div class="content-home">
+    <p style="text-align: center; font-family: 'Copernicus', serif;">We're Miro</p>
+      <h1 class="w3-jumbo" style="font-size: 50px!important;font-weight: 700; text-align: center;">
+      Your Creative Bureau</h1>
+      <p class="w3-center" style="font-family: 'Copernicus', serif; margin-top: 15px; font-size: 17px;">A hand picked team of creative professionals with over 140 year</p>
+    </div>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large"></div>
+
+</div>
+</div>
+
+    <script type="text/javascript" src="/htdocs/js/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="/htdocs/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/htdocs/js/player-js.js"></script>
+    <script type="text/javascript" src="/htdocs/js/custom.js"></script>
+</body>
+</html>
+
