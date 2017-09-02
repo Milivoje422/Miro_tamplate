@@ -6,34 +6,31 @@
   <title>Miro</title>
   <link rel="stylesheet" href="/htdocs/css/bootstrap.css">
   <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" type="text/css" href="/htdocs/css/player-style.css" />
-  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/player-style.css" />
   <link rel="stylesheet" type="text/css" href="/htdocs/css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="/htdocs/css/style.css" />
+  <script type="text/javascript" src="js/videojs-ie8.min.js"></script>
   <link rel="stylesheet" href="/htdocs/css/perload.css">
 
-
-
-<script type="text/javascript">
-  function doOnOrientationChange()
-      {
-        switch(window.orientation) 
-        {  
-          case -90:                 
-                 document.getElementById("landscape").style.display="block";
-                 break;
-          case 90:              
-                document.getElementById("landscape").style.display="block";                 
-                break;
-         default:                   
-                document.getElementById("landscape").style.display="none";
-                break;                            
+  <script type="text/javascript">
+    function doOnOrientationChange()
+        {
+          switch(window.orientation) 
+          {  
+            case -90:                 
+                   document.getElementById("landscape").style.display="block";
+                   break;
+            case 90:              
+                  document.getElementById("landscape").style.display="block";                 
+                  break;
+           default:                   
+                  document.getElementById("landscape").style.display="none";
+                  break;                            
+          }
         }
-      }
-
-      //Listen to orientation change
-      window.addEventListener('orientationchange', doOnOrientationChange);  
-</script>
+        //Listen to orientation change
+        window.addEventListener('orientationchange', doOnOrientationChange);  
+  </script>
 </head>
 <body onload="doOnOrientationChange();">
 <div id="landscape"><div>"Rotate Device to Portrait"</div></div>
@@ -86,6 +83,12 @@
     <div class="section" id="section8"></div>
     <div class="section" id="section9"></div>
   <div class="portfolio-item-style portfolio-item-content" id="portfolio-item-content">
+
+
+<!-- <button onclick='start();'>
+  Start
+</button>  -->
+
     <div class="sasd">
       <div class="img-icn">
         <img src="/htdocs/images/icon-img.png" class="img-icon">
@@ -100,7 +103,7 @@
       <div class="row" style="display: flex;">
 
       <div id="row-text" class="one" style="margin-top: 67px; margin-left: -6px;">
-        <h4>CHALLENGE</h4>
+        <h4 style="margin-top: 0px;">CHALLENGE</h4>
       </div>
       <div class="ss">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet tincidunt tortor. Donec quis est a velit scelerisque vestibulum at elementium ipsum.</p>
@@ -111,8 +114,8 @@
     <div class="col-sm-6 col-xs-12 m-m">
       <div class="row" style="display: flex;">
 
-      <div id="row-text" class="two" style="margin-top: 55px;">
-        <h4 style="margin-top: 4px;">SOLUTION</h4>
+      <div id="row-text" class="two" style="margin-top: 46px;">
+        <h4 style="margin-top: 6px;">SOLUTION</h4>
       </div>
       <div class="ss">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet tincidunt tortor. Donec quis est a velit scelerisque vestibulum at elementium ipsum.</p>
@@ -139,18 +142,24 @@
   }
 
 </style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- <link rel="manifest" href="js/manifest.json"> -->
+<!-- <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.easings.min.js"></script> -->
+<!-- <script type="text/javascript" src="/htdocs/js/scrolloverflow.min.js"></script> -->
+<!-- <script type="text/javascript" src="/htdocs/js/jquery.fullPage.min.js"></script> -->
 
-<script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
-<script type="text/javascript" src="js/jquery.easings.min.js"></script>
-<script type="text/javascript" src="/htdocs/js/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="/htdocs/js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript" src="js/player-js.js"></script>
+
+
+
+
 <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-
-<script type="text/javascript" src="/htdocs/js/player-js.js"></script>
-<script type="text/javascript" src="/htdocs/js/videojs-ie8.min.js"></script>
+<script src="/htdocs/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/htdocs/js/custom.js"></script>
+
 <script type="text/javascript">
 
   $('#fullpage').fullpage({
@@ -163,19 +172,5 @@
   });
 
 </script>
-  <script src="/htdocs/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-     
-  </script>
-
-
-
-  <style type="text/css">
-  /*  .vjs-controls-disabled .vjs-control-bar, .vjs-error .vjs-control-bar, .vjs-using-native-controls .vjs-control-bar, 
-    .video-js .vjs-control-bar, .vjs-control-bar, #big-video-control-container{
-      display: flex !important;
-    }*/
-
-  </style>
 </body>
 </html>

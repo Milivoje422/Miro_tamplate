@@ -11,9 +11,9 @@
  */
 
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.videojs = factory());
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.videojs = factory());
 }(this, (function () { 'use strict';
 
 var version = "6.2.0";
@@ -25,7 +25,7 @@ var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 
 
 
 function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
+  return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
 var win;
@@ -46,7 +46,7 @@ var empty = {};
 
 
 var empty$1 = (Object.freeze || Object)({
-	'default': empty
+  'default': empty
 });
 
 var minDoc = ( empty$1 && empty ) || empty$1;
@@ -159,25 +159,25 @@ var TOUCH_ENABLED = isReal() && ('ontouchstart' in window_1 || window_1.Document
 var BACKGROUND_SIZE_SUPPORTED = isReal() && 'backgroundSize' in window_1.document.createElement('video').style;
 
 var browser = (Object.freeze || Object)({
-	IS_IPAD: IS_IPAD,
-	IS_IPHONE: IS_IPHONE,
-	IS_IPOD: IS_IPOD,
-	IS_IOS: IS_IOS,
-	IOS_VERSION: IOS_VERSION,
-	IS_ANDROID: IS_ANDROID,
-	ANDROID_VERSION: ANDROID_VERSION,
-	IS_OLD_ANDROID: IS_OLD_ANDROID,
-	IS_NATIVE_ANDROID: IS_NATIVE_ANDROID,
-	IS_FIREFOX: IS_FIREFOX,
-	IS_EDGE: IS_EDGE,
-	IS_CHROME: IS_CHROME,
-	CHROME_VERSION: CHROME_VERSION,
-	IS_IE8: IS_IE8,
-	IE_VERSION: IE_VERSION,
-	IS_SAFARI: IS_SAFARI,
-	IS_ANY_SAFARI: IS_ANY_SAFARI,
-	TOUCH_ENABLED: TOUCH_ENABLED,
-	BACKGROUND_SIZE_SUPPORTED: BACKGROUND_SIZE_SUPPORTED
+  IS_IPAD: IS_IPAD,
+  IS_IPHONE: IS_IPHONE,
+  IS_IPOD: IS_IPOD,
+  IS_IOS: IS_IOS,
+  IOS_VERSION: IOS_VERSION,
+  IS_ANDROID: IS_ANDROID,
+  ANDROID_VERSION: ANDROID_VERSION,
+  IS_OLD_ANDROID: IS_OLD_ANDROID,
+  IS_NATIVE_ANDROID: IS_NATIVE_ANDROID,
+  IS_FIREFOX: IS_FIREFOX,
+  IS_EDGE: IS_EDGE,
+  IS_CHROME: IS_CHROME,
+  CHROME_VERSION: CHROME_VERSION,
+  IS_IE8: IS_IE8,
+  IE_VERSION: IE_VERSION,
+  IS_SAFARI: IS_SAFARI,
+  IS_ANY_SAFARI: IS_ANY_SAFARI,
+  TOUCH_ENABLED: TOUCH_ENABLED,
+  BACKGROUND_SIZE_SUPPORTED: BACKGROUND_SIZE_SUPPORTED
 });
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
@@ -1446,32 +1446,32 @@ var $$ = createQuerier('querySelectorAll');
 
 
 var Dom = (Object.freeze || Object)({
-	isReal: isReal,
-	isEl: isEl,
-	createEl: createEl,
-	textContent: textContent,
-	prependTo: prependTo,
-	hasClass: hasClass,
-	addClass: addClass,
-	removeClass: removeClass,
-	toggleClass: toggleClass,
-	setAttributes: setAttributes,
-	getAttributes: getAttributes,
-	getAttribute: getAttribute,
-	setAttribute: setAttribute,
-	removeAttribute: removeAttribute,
-	blockTextSelection: blockTextSelection,
-	unblockTextSelection: unblockTextSelection,
-	getBoundingClientRect: getBoundingClientRect,
-	findPosition: findPosition,
-	getPointerPosition: getPointerPosition,
-	isTextNode: isTextNode,
-	emptyEl: emptyEl,
-	normalizeContent: normalizeContent,
-	appendContent: appendContent,
-	insertContent: insertContent,
-	$: $,
-	$$: $$
+  isReal: isReal,
+  isEl: isEl,
+  createEl: createEl,
+  textContent: textContent,
+  prependTo: prependTo,
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  setAttributes: setAttributes,
+  getAttributes: getAttributes,
+  getAttribute: getAttribute,
+  setAttribute: setAttribute,
+  removeAttribute: removeAttribute,
+  blockTextSelection: blockTextSelection,
+  unblockTextSelection: unblockTextSelection,
+  getBoundingClientRect: getBoundingClientRect,
+  findPosition: findPosition,
+  getPointerPosition: getPointerPosition,
+  isTextNode: isTextNode,
+  emptyEl: emptyEl,
+  normalizeContent: normalizeContent,
+  appendContent: appendContent,
+  insertContent: insertContent,
+  $: $,
+  $$: $$
 });
 
 /**
@@ -2018,11 +2018,11 @@ function one(elem, type, fn) {
 }
 
 var Events = (Object.freeze || Object)({
-	fixEvent: fixEvent,
-	on: on,
-	off: off,
-	trigger: trigger,
-	one: one
+  fixEvent: fixEvent,
+  on: on,
+  off: off,
+  trigger: trigger,
+  one: one
 });
 
 /**
@@ -6787,10 +6787,10 @@ var isCrossOrigin = function isCrossOrigin(url) {
 };
 
 var Url = (Object.freeze || Object)({
-	parseUrl: parseUrl,
-	getAbsoluteURL: getAbsoluteURL,
-	getFileExtension: getFileExtension,
-	isCrossOrigin: isCrossOrigin
+  parseUrl: parseUrl,
+  getAbsoluteURL: getAbsoluteURL,
+  getFileExtension: getFileExtension,
+  isCrossOrigin: isCrossOrigin
 });
 
 var index$1 = isFunction;

@@ -93,10 +93,10 @@ $(window).load(function(){
 
 
 function workList() {
-  0 == $(".archive-btn.selected").length && 1 == $(".archive-btn.visible").length && ($(window).width() > 1280 ? (
-    $(".works-list > li:lt(15)").removeClass("archived-works").addClass("recent-works visible").show(),
-    $(".works-list li").slice(15).removeClass("recent-works visible").addClass("archived-works").hide()
-  ) :
+    0 == $(".archive-btn.selected").length && 1 == $(".archive-btn.visible").length && ($(window).width() > 1280 ? (
+      $(".works-list > li:lt(15)").removeClass("archived-works").addClass("recent-works visible").show(),
+      $(".works-list li").slice(15).removeClass("recent-works visible").addClass("archived-works").hide()
+    ) :
     $(window).width() > 1024 ? (
       $(".works-list > li:lt(14)").removeClass("archived-works").addClass("recent-works visible").show(),
       $(".works-list li").slice(14).removeClass("recent-works visible").addClass("archived-works").hide()
@@ -235,7 +235,7 @@ console.log("Opera = "+isOpera, "FireFox = "+isFirefox, "Safari = "+isSafari, "E
 
 
 
-var my_video = videojs('video-js');
+
 // my_video.on('pause', function(){
 //       checkPausePlay();
 //       console.log('Posed... ');
@@ -277,13 +277,32 @@ var my_video = videojs('video-js');
    //    }
    // }
 
+// videojs("video-js").ready(function(){
+
+ 
+// });
+
+
+// var my_video = videojs('video-js');
+// my_video.on("touchstart", function (e) {
+//   e.preventDefault();
+// $('.vjs-fullscreen-control').click();
+// }
+
    // var clickEventType=((document.ontouchstart!==null) ? 'click':'touchstart');
    //  my_video.on(clickEventType, setFull);
+  function launchIntoFullscreen(e) {
+      e.requestFullscreen ? e.requestFullscreen() : e.mozRequestFullScreen ? e.mozRequestFullScreen() : e.webkitRequestFullscreen ? e.webkitRequestFullscreen() : e.msRequestFullscreen && e.msRequestFullscreen()
+  }
 
-my_video.on('click', function (e) {
-    e.stopPropagation(); e.preventDefault();
-    console.log('ttttt');
-
+var my_video = videojs('video-js');
+my_video.on('touchend', function (e) {
+  
+    e.preventDefault();
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        screen.orientsation.lock('landscape');
+        launchIntoFullscreen(this);
+      }
 });
 
   // var checkPausePlay = function() {
